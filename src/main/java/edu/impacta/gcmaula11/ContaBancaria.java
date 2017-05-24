@@ -11,10 +11,8 @@ public class ContaBancaria {
 	}
 	
 	public boolean sacar(long valor) {
-		// FALTA IMPLEMENTAR
-		// Se o valor for menor ou igual ao saldo, deve retirar o valor do saldo e retornar true
-		// Se o valor ultrapassar o saldo, deve retornar false
-		return true;
+		if(getSaldo() >= valor){this.saldo = valor; return true;}
+		if(getSaldo() <= valor){return false;}
 	}
 	
 	public long getSaldo() {
